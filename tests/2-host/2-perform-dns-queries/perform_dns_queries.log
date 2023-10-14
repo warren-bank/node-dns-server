@@ -1,0 +1,30 @@
+----------------------------------------
+
+host: foo.local
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    foo.local
+Address:  192.168.0.101
+
+----------------------------------------
+
+host: bar.local
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    bar.local
+Address:  192.168.0.102
+
+----------------------------------------
+
+host: baz.local
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    baz.local
+Address:  192.168.0.103
+

@@ -1,6 +1,6 @@
 @echo off
 
-set dns_server="%~dp0..\..\bin\dns-server.js"
+set dns_server="%~dp0..\..\..\bin\dns-server.js"
 
 set hosts="%~dp0.\hosts.json"
 

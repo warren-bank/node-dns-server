@@ -6,6 +6,7 @@ const argv_flags = {
   "--debug":                 {bool: true},
 
   "--hosts-file":            {file: "json"},
+  "--host":                  {many: true},
   "--port":                  {num:  "int"},
   "--fallback-server":       {}
 }
@@ -14,9 +15,10 @@ const argv_flag_aliases = {
   "--version":               ["-v"],
   "--debug":                 ["-d"],
 
-  "--hosts-file":            ["-h", "--hosts", "--file", "-j", "--json"],
+  "--hosts-file":            ["-h"],
+  "--host":                  ["-H"],
   "--port":                  ["-p"],
-  "--fallback-server":       ["-f", "-s"]
+  "--fallback-server":       ["-f"]
 }
 
 let argv_vals = {}
@@ -39,6 +41,22 @@ if (argv_vals["--version"]) {
   const data = require('../../package.json')
   console.log(data.version)
   process.exit(0)
+}
+
+if (Array.isArray(argv_vals["--host"]) && argv_vals["--host"].length){
+  const split_token = /[\s:=]+/
+
+  for (let host of argv_vals["--host"]) {
+    const tokens = host.split(split_token).filter(t => !!t)
+
+    if (tokens.length === 2) {
+      if (!argv_vals["--hosts-file"]){
+        argv_vals["--hosts-file"] = {}
+      }
+
+      argv_vals["--hosts-file"][tokens[0]] = tokens[1]
+    }
+  }
 }
 
 if (!argv_vals["--hosts-file"]){

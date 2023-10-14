@@ -18,13 +18,13 @@ options:
     Print a log of each request.
 
 "-h" <filepath>
-"--hosts" <filepath>
-"--file" <filepath>
-"-j" <filepath>
-"--json" <filepath>
 "--hosts-file" <filepath>
     Specify path to input 'hosts' JSON file.
-    [required]
+
+"-H" <host [=] IP>
+"--host" <host [=] IP>
+    Specify a single 'hosts' key/value pair.
+    [option can be used more than once]
 
 "-p" <number>
 "--port" <number>
@@ -32,7 +32,6 @@ options:
     [default: 53]
 
 "-f" <IP>
-"-s" <IP>
 "--fallback-server" <IP>
     Specify fallback DNS server
     to resolve hostnames not found in "--hosts-file".

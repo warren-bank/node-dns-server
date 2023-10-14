@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/dns-server",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "lib/process_cli.js",
   "description": "A tiny DNS server. Supports a 'hosts' JSON data file. Supports a fallback DNS server.",
   "author": "Warren Bank (https://github.com/warren-bank)",

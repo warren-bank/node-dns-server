@@ -30,13 +30,13 @@ options:
     Print a log of each request.
 
 "-h" <filepath>
-"--hosts" <filepath>
-"--file" <filepath>
-"-j" <filepath>
-"--json" <filepath>
 "--hosts-file" <filepath>
     Specify path to input 'hosts' JSON file.
-    [required]
+
+"-H" <host [=] IP>
+"--host" <host [=] IP>
+    Specify a single 'hosts' key/value pair.
+    [option can be used more than once]
 
 "-p" <number>
 "--port" <number>
@@ -44,7 +44,6 @@ options:
     [default: 53]
 
 "-f" <IP>
-"-s" <IP>
 "--fallback-server" <IP>
     Specify fallback DNS server
     to resolve hostnames not found in "--hosts-file".
@@ -61,7 +60,21 @@ options:
     * all host names that match this regex key are resolved to its corresponding IP address value
   - otherwise
     * only host names that match this exact string value are resolved to its corresponding IP address value
-* [example](./tests/1a-start-dns-server/hosts.json)
+
+#### Examples:
+
+* of specifying a [`hosts.json`](./tests/1-hosts-file/1a-start-dns-server/hosts.json) file
+  ```bash
+    dns-server \
+      -h "/path/to/hosts.json"
+  ```
+* of specifying 'hosts' mappings without a `hosts.json` file:
+  ```bash
+    dns-server \
+      -H "foo.local = 192.168.0.101" \
+      -H "bar.local = 192.168.0.102" \
+      -H "baz.local = 192.168.0.103"
+  ```
 
 - - - -
 
