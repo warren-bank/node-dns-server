@@ -44,7 +44,7 @@ if (argv_vals["--version"]) {
 }
 
 if (Array.isArray(argv_vals["--host"]) && argv_vals["--host"].length){
-  const split_token = /[\s:=]+/
+  const split_token = /\s+[=]\s+/
 
   for (let host of argv_vals["--host"]) {
     const tokens = host.split(split_token).filter(t => !!t)
