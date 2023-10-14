@@ -1,0 +1,80 @@
+----------------------------------------
+
+host: this-machine.local
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    this-machine.local
+Address:  127.0.0.1
+
+----------------------------------------
+
+host: that-machine.local
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    that-machine.local
+Address:  127.0.0.1
+
+----------------------------------------
+
+host: github.com
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    github.com
+Address:  127.0.0.2
+
+----------------------------------------
+
+host: www.github.com
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    www.github.com
+Address:  127.0.0.3
+
+----------------------------------------
+
+host: ww2.github.com
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    ww2.github.com
+Address:  127.0.0.4
+
+----------------------------------------
+
+host: ww3.github.com
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    ww3.github.com
+Address:  127.0.0.4
+
+----------------------------------------
+
+host: example.com
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    example.com
+Address:  93.184.216.34
+
+----------------------------------------
+
+host: usa.gov
+Non-authoritative answer:
+Server:  UnKnown
+Address:  127.0.0.1
+
+Name:    usa.gov
+Address:  23.22.13.113
+

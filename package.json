@@ -1,0 +1,31 @@
+{
+  "name": "@warren-bank/dns-server",
+  "version": "1.0.0",
+  "main": "lib/process_cli.js",
+  "description": "A tiny DNS server. Supports a 'hosts' JSON data file. Supports a fallback DNS server.",
+  "author": "Warren Bank (https://github.com/warren-bank)",
+  "license": "GPL-2.0",
+  "bin": {
+    "dns-server": "bin/dns-server.js"
+  },
+  "dependencies": {
+    "@warren-bank/node-process-argv": "^1.2.1",
+    "dns2": "^2.1.0"
+  },
+  "author": {
+    "name": "Warren R. Bank",
+    "email": "warren.r.bank@gmail.com",
+    "url": "https://github.com/warren-bank"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warren-bank/node-dns-server"
+  },
+  "keywords": [
+    "dns server",
+    "dns",
+    "dns2",
+    "hosts",
+    "hosts file"
+  ]
+}
